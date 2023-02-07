@@ -1,0 +1,349 @@
+:root {
+    --main-font-size: 14px;
+    --main-font-family: 'Montserrat', sans-serif;
+    --textSecondColor: #ffff;
+    --textColor: #1C2025;
+    --bgColor: #113340;
+    --light: #eceff1;
+    --link: #546e7a;
+    --hover: #78909c;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--bgColor);
+}
+
+.sidebar a {
+    color: var(--light);
+}
+
+a:hover {
+    color: var(--hover);
+}
+
+li {
+    color: white;
+    padding: 15px 0 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.skills li,
+.languages li,
+h3 {
+    color: #fff;
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    max-width: 33vw;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: var(--bgColor);
+    color: var(--textSecondColor);
+    font-family: var(--main-font-family);
+    position: relative;
+    height: auto;
+}
+
+.photo {
+    padding: 30px 30px 30px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.photo img {
+    height: 200px;
+    width: 200px;
+    border: 7px solid white;
+    border-radius: 50%;
+}
+
+.sidebar .section-heading {
+    border-bottom: 3px solid white;
+    width: 90%;
+}
+
+.icon {
+    width: 20px;
+}
+
+.contacts.list > li > div {
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    display: inline-block
+}
+
+.contacts__text {
+    padding: 0 10px 0;
+}
+
+.list {
+    padding: 10px 0 7px;
+}
+
+.skills li:nth-child(10) .progress {
+    width: 15%;
+}
+
+.skills li:nth-child(11) .progress {
+    width: 15%;
+}
+
+.languages li:nth-child(1) .progress {
+    width: 100%;
+}
+
+.languages li:nth-child(2) .progress {
+    width: 65%;
+}
+
+.languages li:nth-child(3) .progress {
+    width: 30%;
+}
+
+.languages p {
+    font-size: 12px;
+    text-align: right;
+    padding-top: 2px;
+}
+
+.main-info {
+    max-width: 70vw;
+    width: 100%;
+    font-family: var(--main-font-family);
+    overflow: hidden;
+}
+
+.header {
+    margin: 30px 0 0 0;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-hidden {
+    display: none;
+    position: absolute;
+}
+
+.container {
+    padding-top: 15px;
+    padding-right: 25px;
+}
+
+.sidebar .block {
+    font-weight: 300;
+}
+
+.block {
+    margin: 0 0 0 30px;
+    padding: 0 0 15px 0;
+    font-weight: 300;
+}
+
+.contacts-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding-bottom: 30px
+}
+
+.linkedin,
+.github,
+.telegram,
+.codewars,
+.me {
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+}
+
+.linkedin {
+    background-image: url(image/linkedin-fill-svgrepo-com.svg);
+
+}
+
+.linkedin:hover {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(85%) saturate(4716%) hue-rotate(186deg) brightness(99%) contrast(101%);
+}
+
+.github {
+    background-image: url(image/github-fill-svgrepo-com.svg)
+}
+
+.github:hover {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(6%) saturate(24%) hue-rotate(268deg) brightness(107%) contrast(107%);
+}
+
+.telegram {
+    background-image: url(image/telegram-fill-svgrepo-com.svg);
+}
+
+.telegram:hover {
+    filter: brightness(0) saturate(100%) invert(41%) sepia(38%) saturate(5026%) hue-rotate(176deg) brightness(90%) contrast(101%);
+}
+.me {
+    background-image: url(image/portfolio-case-business-suitcase-svgrepo-com.svg);
+}
+
+.me:hover {
+    filter: brightness(0) saturate(100%) invert(41%) sepia(38%) saturate(5026%) hue-rotate(176deg) brightness(90%) contrast(101%);
+}
+
+
+.codewars {
+    background-image: url(image/codewars-svgrepo-com.svg)
+}
+
+.codewars:hover {
+    filter: brightness(0) saturate(100%) invert(39%) sepia(69%) saturate(305%) hue-rotate(308deg) brightness(95%) contrast(125%);
+}
+
+.container .block {
+    padding: 0 0 20px 0;
+}
+
+.sidebar .block + .block {
+    margin-top: 10px;
+}
+
+.main-heading {
+    font-size: 46px;
+    justify-self: center;
+}
+
+.main-heading,
+.sub-heading {
+    color: var(--textColor);
+    letter-spacing: 2px;
+}
+
+.sub-heading {
+    padding: 15px 0 0 0;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.project,
+.summary,
+.position {
+    width: inherit;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+.project a {
+    display: inline-block;
+    padding-bottom: 5px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.project span {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.project p {
+    padding: 5px 0;
+}
+
+.project p:nth-child(4) {
+    padding-top: 10px;
+}
+
+.project p:nth-child(6) {
+    padding-top: 10px;
+
+}
+
+.project a span:hover {
+    color: var(--hover);
+}
+
+.project + .project {
+    padding: 10px 0 0 0;
+}
+
+.section-heading {
+    padding: 0 0 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-bottom: 3px solid var(--textColor);
+    font-size: 20px;
+    letter-spacing: 7px;
+}
+
+.container .section-heading {
+    margin: 0 0 20px;
+}
+
+.main-info .section-heading {
+    padding: 0 0 5px 0;
+    margin: 0 0 15px;
+    color: var(--textColor);
+}
+
+.element + .element {
+    padding-top: 17px;
+}
+
+.date {
+    grid-column: 1/2;
+    width: 150px;
+}
+
+.position {
+    display: flex;
+    justify-content: space-between
+}
+
+.position > h4 {
+    font-size: 18px;
+    padding-bottom: 15px
+}
+
+.position > div {
+    font-size: 14px;
+    color: #7A7A7AFF;
+    display: inline-block;
+    width: 270px;
+    text-align: end;
+}
+
+.position p {
+    display: inline-block;
+}
+
+.position p,
+.responsibilitiy p,
+.course p {
+    padding: 0 10px 5px 0;
+}
+
+.experience .position {
+    padding-top: 15px;
+}
